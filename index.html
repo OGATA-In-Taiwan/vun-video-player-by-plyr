@@ -1,10 +1,20 @@
 <head>
   <link href="►un.png" rel="shortcut icon">
   <title>Vun-Video</title>
-  <script src="plyr-citation.js"></script>
+  <script src="citation.js"></script>
 </head>
 <video id="player" playsinline controls data-poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg">
   <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1080p.mp4" type="video/mp4" size="1080" default>
+  <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4" type="video/mp4" size="720">
+  <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" type="video/mp4" size="576">
+  <track kind="captions" label="English" srclang="en" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.en.vtt" default />
+  <track kind="captions" label="Français" srclang="fr" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.fr.vtt" />
   <!-- source src="" type="video/mp4" size="" default -->
 </video>
-<script src="plyr-main.min.js"></script>
+<script src="main.js"></script>
+<!-- script src="video-encryption.js"></script>
+<script>
+  var url = 'https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1080p.mp4';
+  var mimeCodec = 'video/mp4; codecs="avc1.640028, mp4a.40.2"';
+  video_encryption.init('#player', url, mimeCodec);
+</script -->

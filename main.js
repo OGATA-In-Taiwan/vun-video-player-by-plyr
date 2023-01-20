@@ -8,6 +8,11 @@ const player = new Plyr("#player", {
   disableContextMenu: true,
   loadSprite: true,
   blankVideo: "https://cdn.plyr.io/static/blank.mp4",
+  captions: {
+    active: true,
+    language: "auto",
+  },
+
   tooltips: { 
     controls: true,
     seek: true
@@ -56,8 +61,7 @@ const player = new Plyr("#player", {
     "duration",
     "mute",
     "volume",
-    // "captions",
-    "capture",
+    "captions",
     "settings",
     // "pip",
     // "airplay",
