@@ -1,6 +1,8 @@
 @charset "UTF-8";
 :root {
   --b-link: #42A6F7;
+  --plyr-control-radius: 10px;
+  --plyr-font-smoothing: false;
 }
 
 :focus {
@@ -38,8 +40,4 @@ button {
 }
 .js-append-links a {
   color: #FFF !important;
-}
-
-video {
-  margin: 0;
 }
