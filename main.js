@@ -61,7 +61,7 @@ const player = new Plyr("#player", {
     "duration",
     "mute",
     "volume",
-    "captions",
+    // "captions",
     "settings",
     // "pip",
     // "airplay",
