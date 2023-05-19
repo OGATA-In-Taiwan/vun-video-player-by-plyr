@@ -2,6 +2,11 @@
   <link href="►un.png" rel="shortcut icon">
   <title>Vun-Video</title>
   <script src="citation.js"></script>
+  <script>
+    function getFileNameFromUrl(url) {
+      return url.split('/').pop();
+    }
+  </script>
 </head>
 <video id="player" playsinline controls data-poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg">
   <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1080p.mp4" type="video/mp4" size="1080" default>
