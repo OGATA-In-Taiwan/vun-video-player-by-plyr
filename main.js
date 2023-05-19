@@ -3,7 +3,7 @@ const player = new Plyr("#player", {
   autoplay: false,
   seekTime: 10,
   volume: 0.7, muted: false,
-  ratio: "3:2",
+  // ratio: "3:2",
   resetOnEnd: false,
   disableContextMenu: true,
   loadSprite: true,
