@@ -3,29 +3,11 @@
   <title>Vun-Video</title>
   <script src="citation.js"></script>
   <script>
-    const video = document.getElementById("player"); 
-  const params = new URLSearchParams(window.location.search);
-  const src = params.get('src');
-  video.src = src;
-  </script>
-  <!-- script>
-    const video = document.getElementById("player"); 
-const source = document.createElement("source"); 
-source.setAttribute("src", "vi.mp4"); 
-source.setAttribute("type", "video/mp4"); 
-video.appendChild(source); 
-    
-
 var params =
-      URLSearchParams &&
-    new URLSearchParams(document.location.search.substring(1))
-    var url = params && params.get("url") && decodeURIComponent(params.get("url"))
-      console.log(url)
-
-    function getFileNameFromUrl(url) {
-      return url.split('/').pop();
-    }
-  </script -->
+  URLSearchParams && new URLSearchParams(document.location.search.substring(1));
+var url = params && params.get("url") && decodeURIComponent(params.get("url"));
+console.log(url);
+  </script>
 </head>
 <video id="player" playsinline controls data-poster="">
   <source src="" type="video/mp4" size="" default>
