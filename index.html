@@ -14,14 +14,14 @@
 
   // 檢查是否有 url 參數並設定 src 屬性
   if (url) {
-    // 解碼參數值
-    var decodedUrl = decodeURIComponent(url);
-
-    // 將解析後的參數值設定到 src 屬性
     var video = document.getElementById("player");
     var source = video.querySelector("source");
-    source.src = decodedUrl;
+    var decodedUrl = decodeURIComponent(url);
 
+    // 將 "www.vun-video.tk/?url=vi.mp4" 轉換為 "vi.mp4"
+    var filename = decodedUrl.split("/").pop();
+
+    source.src = filename;
     video.load();
   }
 </script>
