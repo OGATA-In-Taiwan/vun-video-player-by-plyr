@@ -3,10 +3,16 @@
   <title>Vun-Video</title>
   <script src="citation.js"></script>
   <script>
-var params =
+    var params =
   URLSearchParams && new URLSearchParams(document.location.search.substring(1));
 var url = params && params.get("url") && decodeURIComponent(params.get("url"));
-console.log(url);
+
+var video = document.getElementById("player");
+var source = video.querySelector("source");
+source.src = url;
+
+video.load();
+
   </script>
 </head>
 <video id="player" playsinline controls data-poster="">
