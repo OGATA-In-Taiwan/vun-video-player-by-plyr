@@ -12,15 +12,18 @@
   var urlParams = new URLSearchParams(window.location.search);
   var url = urlParams.get("url");
 
-  // 解碼參數值
-  var decodedUrl = decodeURIComponent(url);
+  // 檢查是否有 url 參數並設定 src 屬性
+  if (url) {
+    // 解碼參數值
+    var decodedUrl = decodeURIComponent(url);
 
-  // 將解析後的參數值設定到src屬性
-  var video = document.getElementById("player");
-  var source = video.querySelector("source");
-  source.src = decodedUrl;
+    // 將解析後的參數值設定到 src 屬性
+    var video = document.getElementById("player");
+    var source = video.querySelector("source");
+    source.src = decodedUrl;
 
-  video.load();
+    video.load();
+  }
 </script>
 
 <script src="main.js"></script>
