@@ -4,13 +4,18 @@
   <script src="citation.js"></script>
   <script>
     const video = document.getElementById("player"); 
+  const params = new URLSearchParams(window.location.search);
+  const src = params.get('src');
+  video.src = src;
+  </script>
+  <!-- script>
+    const video = document.getElementById("player"); 
 const source = document.createElement("source"); 
 source.setAttribute("src", "vi.mp4"); 
 source.setAttribute("type", "video/mp4"); 
 video.appendChild(source); 
     
-  </script>
-  <!-- script>
+
 var params =
       URLSearchParams &&
     new URLSearchParams(document.location.search.substring(1))
