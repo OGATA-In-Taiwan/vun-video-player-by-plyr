@@ -18,10 +18,8 @@
     var source = video.querySelector("source");
     var decodedUrl = decodeURIComponent(url);
 
-    // 將 "www.vun-video.tk/?url=vi.mp4" 轉換為 "vi.mp4"
-    var filename = decodedUrl.split("/").pop();
-
-    source.src = filename;
+    // 將 src 屬性設定為鏈結參數中的值
+    source.src = decodedUrl;
     video.load();
   }
 </script>
