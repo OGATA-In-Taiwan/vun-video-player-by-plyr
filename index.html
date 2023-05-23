@@ -3,27 +3,14 @@
   <title>Vun-Video</title>
   <script src="citation.js"></script>
 </head>
-<video id="player" playsinline controls data-poster="">
-  <source src="" type="video/mp4" size="" default>
+<video id="player" playsinline controls data-poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg">
+  <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1080p.mp4" type="video/mp4" size="1080" default>
+  <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4" type="video/mp4" size="720">
+  <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" type="video/mp4" size="576">
+  <track kind="captions" label="English" srclang="en" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.en.vtt" default />
+  <track kind="captions" label="Français" srclang="fr" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.fr.vtt" />
+  <!-- source src="" type="video/mp4" size="" default -->
 </video>
-
-<script>
-  // 獲取鏈結參數
-  var urlParams = new URLSearchParams(window.location.search);
-  var url = urlParams.get("url");
-
-  // 檢查是否有 url 參數並設定 src 屬性
-  if (url) {
-    var video = document.getElementById("player");
-    var source = video.querySelector("source");
-    var decodedUrl = decodeURIComponent(url);
-
-    // 將 src 屬性設定為鏈結參數中的值
-    source.src = decodedUrl;
-    video.load();
-  }
-</script>
-
 <script src="main.js"></script>
 <!-- script src="video-encryption.js"></script>
 <script>
