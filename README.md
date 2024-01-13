@@ -45,8 +45,8 @@
     <source src="<1080p mp4 影片檔>" type="video/mp4" size="1080" default>
     <source src="<720p mp4 影片檔>" type="video/mp4" size="720">
     <source src="<480p mp4 影片檔>" type="video/mp4" size="480">
-    <track kind="captions" label="<字幕語言en>" srclang="en" src="<mp4 影片檔 srt>" default>
-    <track kind="captions" label="<字幕語言fr>" srclang="fr" src="<mp4 影片檔 srt>">
+    <track kind="captions" label="<字幕語言en>" srclang="en" src="<mp4 影片檔 vtt>" default>
+    <track kind="captions" label="<字幕語言fr>" srclang="fr" src="<mp4 影片檔 vtt>">
   </video>
   <script src="https://ogata-in-taiwan.github.io/Vun-Video-Player/main.js"></script>
 </body>
@@ -54,4 +54,4 @@
 ***
 
 ## 版權聲明
-### © Copyright 2022 OGATA. All rights reserved.
+### © Copyright 2024 OGATA. All rights reserved.
