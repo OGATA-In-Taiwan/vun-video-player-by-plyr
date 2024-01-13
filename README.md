@@ -3,7 +3,7 @@
 ***
 
 ## 注意
-### Vun-Video-Player 改寫自 [sampotts/plyr](https://github.com/sampotts/plyr)
+### Vun-Video-Player By Plyr 改寫自 [sampotts/plyr](https://github.com/sampotts/plyr)
 ***
 
 ## 特色
