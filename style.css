@@ -1,11 +1,11 @@
 @charset "UTF-8";
 :root {
-/*  --b-link: #42A6F7; */
+  --b-link: #db2121;
   --plyr-control-radius: 5px;
   --plyr-font-smoothing: false; 
 }
 
-/* :focus {
+:focus {
   box-shadow: none;
 }
 
@@ -19,7 +19,7 @@
     height: -webkit-fill-available;
     -webkit-overflow-scrolling: touch;
   }
-} */
+}
 
 body {
   vertical-align: middle;
@@ -35,9 +35,9 @@ button {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "微軟正黑體", "Microsoft JhengHei";
 }
 
-/* .js-append-links li {
+.js-append-links li {
   list-style: none !important;
 }
 .js-append-links a {
   color: #FFF !important;
-} */
+}
