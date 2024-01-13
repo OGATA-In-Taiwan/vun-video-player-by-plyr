@@ -1,6 +1,9 @@
 @charset "UTF-8";
 :root {
-  --b-link: #db2121;
+  --plyr-color-main: #db2121;
+  --plyr-badge-background: #4a5464;
+  --plyr-badge-text-color: #ffffff;
+  --plyr-badge-border-radius: 5px;
   --plyr-control-radius: 5px;
   --plyr-font-smoothing: false; 
 }
