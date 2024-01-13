@@ -2,7 +2,7 @@ const player = new Plyr("#player", {
   title: "Vun-Video",
   autoplay: false,
   seekTime: 10,
-  volume: 0.7, muted: false,
+  volume: 1, muted: false,
   // ratio: "3:2",
   resetOnEnd: false,
   disableContextMenu: true,
@@ -69,7 +69,7 @@ const player = new Plyr("#player", {
 
   keyboard: {
     focused: true,
-    global: false
+    global: true
   },
 
   quality: {
