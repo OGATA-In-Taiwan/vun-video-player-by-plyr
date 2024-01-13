@@ -39,7 +39,7 @@ const player = new Plyr("#player", {
     reset: "重置",
     disabled: "關閉",
     advertisement: "廣告",
-    },
+    
   },
   
   controls: [
