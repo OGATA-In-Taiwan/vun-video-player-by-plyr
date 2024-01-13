@@ -39,14 +39,6 @@ const player = new Plyr("#player", {
     reset: "重置",
     disabled: "關閉",
     advertisement: "廣告",
-    qualityBadge: {
-      4320: "UHD",
-      2160: "UHD",
-      1440: "FHD",
-      1080: "FHD",
-      720: "HD",
-      576: "SD",
-      480: "SD",
     },
   },
   
